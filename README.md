@@ -1,3 +1,3 @@
 # BineTek
 
-A modern technology mod with its own proprietary energy system.
+A modern technology war mod.
