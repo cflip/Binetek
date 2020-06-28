@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[28,)" 
+issueTrackerURL="https://github.com/cflip/BineTek/issues"
+[[mods]] 
+modId="binetek"
+version="ALPHA-01"
+displayName="BineTek"
+displayURL="https://github.com/cflip/BineTek"
+logoFile="bineteklogo.png" # need to get the logo in still
+authors="Cflip, jprik and Wawful"
+description="A modern technology mod with its own proprietary energy system."
+state="unfinished"
+
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.examplemod]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[28,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+# Here's another dependency
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.14.4]"
+    ordering="NONE"
+    side="BOTH"
