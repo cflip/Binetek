@@ -1,6 +1,7 @@
 package com.cflip.binetek;
 
 import com.cflip.binetek.block.BlockList;
+import com.cflip.binetek.item.CoalCokeItem;
 import com.cflip.binetek.item.FertilizerPouchItem;
 import com.cflip.binetek.item.ItemList;
 
@@ -42,7 +43,7 @@ public class BinetekRegistry {
 				// ITEM ITEMS
 				ItemList.fertilizerDust = new BoneMealItem(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(Binetek.MODID, "fertilizer_dust"),
 				ItemList.fertilizerPouch = new FertilizerPouchItem(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(Binetek.MODID, "fertilizer_pouch"),
-				ItemList.coalCoke = new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(Binetek.MODID, "coal_coke"),
+				ItemList.coalCoke = new CoalCokeItem(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(Binetek.MODID, "coal_coke"),
 				ItemList.sulfur = new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(Binetek.MODID, "sulfur"),
 
 				// BLOCK ITEMS

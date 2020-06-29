@@ -1,6 +1,5 @@
 package com.cflip.binetek;
 
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
