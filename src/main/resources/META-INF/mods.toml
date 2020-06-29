@@ -9,7 +9,6 @@ displayURL="https://github.com/cflip/BineTek"
 logoFile="bineteklogo.png" # need to get the logo in still
 authors="Cflip, jprik and Wawful"
 description="A modern technology mod with its own proprietary energy system."
-state="unfinished"
 
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.examplemod]] #optional

@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "binetek:block/research_table_side",
+        "down": "binetek:block/research_table_bottom",
+        "up": "binetek:block/research_table_top",
+        "north": "binetek:block/research_table_side",
+        "east": "binetek:block/research_table_side",
+        "south": "binetek:block/research_table_side",
+        "west": "binetek:block/research_table_side"
+    }
+}
