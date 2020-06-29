@@ -1,7 +1,7 @@
 {
     "parent": "block/cube",
     "textures": {
-        "particle": "binetek:block/research_table_side",
+        "particle": "binetek:block/rtable_side1",
         "down": "binetek:block/rtable_bottom",
         "up": "binetek:block/rtable_top",
         "north": "binetek:block/rtable_side1",
