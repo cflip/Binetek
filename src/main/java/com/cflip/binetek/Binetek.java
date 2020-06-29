@@ -6,12 +6,12 @@ import org.apache.logging.log4j.Logger;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod(BineTek.MODID)
-public class BineTek {
+@Mod(Binetek.MODID)
+public class Binetek {
 	public static final Logger LOGGER = LogManager.getLogger();
 	public static final String MODID = "binetek";
 
-	public BineTek() {
+	public Binetek() {
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 }

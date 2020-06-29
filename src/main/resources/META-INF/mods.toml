@@ -1,14 +1,14 @@
 modLoader="javafml"
 loaderVersion="[28,)" 
-issueTrackerURL="https://github.com/cflip/BineTek/issues"
+issueTrackerURL="https://github.com/cflip/Binetek/issues"
 [[mods]] 
 modId="binetek"
 version="ALPHA-01"
-displayName="BineTek"
-displayURL="https://github.com/cflip/BineTek"
+displayName="Binetek"
+displayURL="https://github.com/cflip/Binetek"
 logoFile="bineteklogo.png" # need to get the logo in still
 authors="Cflip, jprik and Wawful"
-description="A modern technology mod with its own proprietary energy system."
+description="A modern technology war mod."
 
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.examplemod]] #optional
