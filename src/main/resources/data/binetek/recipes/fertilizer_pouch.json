@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SSS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "binetek:fertilizer_dust"
+    }
+  },
+
+  "result": {
+    "item": "binetek:fertilizer_pouch"
+  }
+}
