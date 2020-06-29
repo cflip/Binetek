@@ -1,6 +1,7 @@
 package com.cflip.binetek;
 
 import com.cflip.binetek.block.BlockList;
+import com.cflip.binetek.item.BinetekItemGroup;
 import com.cflip.binetek.item.CoalCokeItem;
 import com.cflip.binetek.item.FertilizerPouchItem;
 import com.cflip.binetek.item.ItemList;
@@ -41,15 +42,15 @@ public class BinetekRegistry {
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
 		event.getRegistry().registerAll(
 				// ITEM ITEMS
-				ItemList.fertilizerDust = new BoneMealItem(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(Binetek.MODID, "fertilizer_dust"),
-				ItemList.fertilizerPouch = new FertilizerPouchItem(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(Binetek.MODID, "fertilizer_pouch"),
-				ItemList.coalCoke = new CoalCokeItem(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(Binetek.MODID, "coal_coke"),
-				ItemList.sulfur = new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(Binetek.MODID, "sulfur"),
+				ItemList.fertilizerDust = new BoneMealItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "fertilizer_dust"),
+				ItemList.fertilizerPouch = new FertilizerPouchItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "fertilizer_pouch"),
+				ItemList.coalCoke = new CoalCokeItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "coal_coke"),
+				ItemList.sulfur = new Item(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "sulfur"),
 
 				// BLOCK ITEMS
-				ItemList.researchTable = new BlockItem(BlockList.researchTable, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockList.researchTable.getRegistryName()),
-				ItemList.limeStone = new BlockItem(BlockList.limeStone, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.limeStone.getRegistryName()),
-				ItemList.sulfurOre = new BlockItem(BlockList.sulfurOre, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.sulfurOre.getRegistryName())
+				ItemList.researchTable = new BlockItem(BlockList.researchTable, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(BlockList.researchTable.getRegistryName()),
+				ItemList.limeStone = new BlockItem(BlockList.limeStone, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(BlockList.limeStone.getRegistryName()),
+				ItemList.sulfurOre = new BlockItem(BlockList.sulfurOre, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(BlockList.sulfurOre.getRegistryName())
 		);
 	}
 

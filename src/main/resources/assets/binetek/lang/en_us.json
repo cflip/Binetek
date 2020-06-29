@@ -6,5 +6,7 @@
 	"item.binetek.fertilizer_dust": "Fertilizer Dust",
 	"item.binetek.fertilizer_pouch": "Fertilizer Pouch",
 	"item.binetek.coal_coke": "Coal Coke",
-	"item.binetek.sulfur": "Sulfur"
+	"item.binetek.sulfur": "Sulfur",
+
+	"itemGroup.binetek": "Binetek"
 }
