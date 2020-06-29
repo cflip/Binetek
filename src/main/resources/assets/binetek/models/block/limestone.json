@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "binetek:block/limestone",
+    "down": "binetek:block/limestone",
+    "up": "binetek:block/limestone",
+    "north": "binetek:block/limestone",
+    "east": "binetek:block/limestone",
+    "south": "binetek:block/limestone",
+    "west": "binetek:block/limestone"
+  }
+}
