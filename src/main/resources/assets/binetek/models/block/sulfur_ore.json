@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "binetek:block/limestone"
+    "all": "binetek:block/sulfur_ore"
   }
 }
