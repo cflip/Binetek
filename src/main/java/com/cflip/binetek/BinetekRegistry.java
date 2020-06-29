@@ -19,6 +19,8 @@ public class BinetekRegistry {
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
 		event.getRegistry().registerAll(
+			ItemList.fertilizerDust = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(Binetek.MODID, "fertilizer_dust"),
+
 			ItemList.researchTable = new BlockItem(BlockList.researchTable, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockList.researchTable.getRegistryName())
 		);
 	}
