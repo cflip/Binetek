@@ -16,19 +16,19 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BinetekRegistry {
-	@SubscribeEvent
-	public static void registerItems(final RegistryEvent.Register<Item> event) {
-		event.getRegistry().registerAll(
-			ItemList.fertilizerDust = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(Binetek.MODID, "fertilizer_dust"),
+    @SubscribeEvent
+    public static void registerItems(final RegistryEvent.Register<Item> event) {
+        event.getRegistry().registerAll(
+                ItemList.fertilizerDust = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(Binetek.MODID, "fertilizer_dust"),
+                ItemList.coalCoke = new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(Binetek.MODID, "coal_coke"),
+                ItemList.researchTable = new BlockItem(BlockList.researchTable, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockList.researchTable.getRegistryName())
+        );
+    }
 
-			ItemList.researchTable = new BlockItem(BlockList.researchTable, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockList.researchTable.getRegistryName())
-		);
-	}
-	
-	@SubscribeEvent
-	public static void registerBlocks(final RegistryEvent.Register<Block> event) {
-		event.getRegistry().registerAll(
-			BlockList.researchTable = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.6f).harvestTool(ToolType.AXE).sound(SoundType.WOOD)).setRegistryName(Binetek.MODID, "research_table")
-		);
-	}
+    @SubscribeEvent
+    public static void registerBlocks(final RegistryEvent.Register<Block> event) {
+        event.getRegistry().registerAll(
+                BlockList.researchTable = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.6f).harvestTool(ToolType.AXE).sound(SoundType.WOOD)).setRegistryName(Binetek.MODID, "research_table")
+        );
+    }
 }
