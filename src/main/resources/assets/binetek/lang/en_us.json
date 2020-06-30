@@ -10,6 +10,11 @@
 	"item.binetek.coal_coke": "Coal Coke",
 	"item.binetek.sulfur": "Sulfur",
 	"item.binetek.copper_ingot": "Copper Ingot",
+	"item.binetek.copper_pickaxe": "Copper Pickaxe",
+	"item.binetek.copper_axe": "Copper Axe",
+	"item.binetek.copper_shovel": "Copper Shovel",
+	"item.binetek.copper_hoe": "Copper Hoe",
+	"item.binetek.copper_sword": "Copper Sword",
 
 	"item.binetek.techbook_chemical": "Chemical Research Book",
 	"item.binetek.techbook_construction": "Construction Research Book",

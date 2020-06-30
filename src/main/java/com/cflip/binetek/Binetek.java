@@ -13,9 +13,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.inventory.container.ContainerType;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.BoneMealItem;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.event.RegistryEvent;
@@ -66,6 +64,11 @@ public class Binetek {
 				ItemList.techbookConstruction = new TechBookItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "techbook_construction"),
 				ItemList.techbookOrder = new TechBookItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "techbook_order"),
 				ItemList.techbookWeaponry = new TechBookItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "techbook_weaponry"),
+				ItemList.copperPickaxe = new PickaxeItem(CopperItemTier.instance, 1, -3, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "copper_pickaxe"),
+				ItemList.copperAxe = new AxeItem(CopperItemTier.instance, 5, -3.5f, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "copper_axe"),
+				ItemList.copperShovel = new ShovelItem(CopperItemTier.instance, 1, -3, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "copper_shovel"),
+				ItemList.copperHoe = new HoeItem(CopperItemTier.instance, -0.6f, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "copper_hoe"),
+				ItemList.copperSword = new SwordItem(CopperItemTier.instance, 2, -2.8f, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "copper_sword"),
 
 				// BLOCK ITEMS
 				ItemList.researchTable = new BlockItem(BlockList.researchTable, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(BlockList.researchTable.getRegistryName()),
