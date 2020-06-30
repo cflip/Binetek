@@ -2,19 +2,20 @@
 	"block.binetek.research_table": "Research Table",
 	"block.binetek.limestone": "Limestone",
 	"block.binetek.sulfur_ore": "Sulfur Ore",
+	"block.binetek.copper_ore": "Copper Ore",
 
 	"item.binetek.fertilizer_dust": "Fertilizer Dust",
 	"item.binetek.fertilizer_pouch": "Fertilizer Pouch",
 	"item.binetek.coal_coke": "Coal Coke",
 	"item.binetek.sulfur": "Sulfur",
-
-	"itemGroup.binetek": "Binetek",
-
-	"container.research_table": "Researched Crafting",
+	"item.binetek.copper_ingot": "Copper Ingot",
 
 	"item.binetek.techbook_chemical": "Chemical Research Book",
 	"item.binetek.techbook_construction": "Construction Research Book",
 	"item.binetek.techbook_order": "Command Research Book",
-	"item.binetek.techbook_weaponry": "Weaponry Research Book"
+	"item.binetek.techbook_weaponry": "Weaponry Research Book",
 
+	"itemGroup.binetek": "Binetek",
+
+	"container.research_table": "Researched Crafting"
 }
