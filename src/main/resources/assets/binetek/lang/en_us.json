@@ -3,6 +3,7 @@
 	"block.binetek.limestone": "Limestone",
 	"block.binetek.sulfur_ore": "Sulfur Ore",
 	"block.binetek.copper_ore": "Copper Ore",
+	"block.binetek.techshelf": "Technology Bookshelf",
 
 	"item.binetek.fertilizer_dust": "Fertilizer Dust",
 	"item.binetek.fertilizer_pouch": "Fertilizer Pouch",
@@ -14,9 +15,7 @@
 	"item.binetek.techbook_construction": "Construction Research Book",
 	"item.binetek.techbook_order": "Command Research Book",
 	"item.binetek.techbook_weaponry": "Weaponry Research Book",
-	"item.binetek.techshelf":"Technology Bookshelf",
+
 	"itemGroup.binetek": "Binetek",
-
 	"container.research_table": "Researched Crafting"
-
 }

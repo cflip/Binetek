@@ -1,8 +1,9 @@
 {
     "textures": {
-        "oak_planks": "minecraft:blocks/oak_planks"
+        "particle": "blocks/oak_planks",
+        "oak_planks": "blocks/oak_planks"
     },
-    "display": {
+	"display": {
         "gui": {
             "rotation": [ 30, 45, 0 ],
             "translation": [ 0, 0, 0 ],
@@ -37,8 +38,8 @@
     "elements": [
         {
             "name": "Cube",
-            "from": [ 0, 0, 0 ], 
-            "to": [ 16, 16, 1 ], 
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 1 ],
             "shade": false,
             "faces": {
                 "north": { "texture": "#oak_planks", "uv": [ 0, 0, 16, 16 ] },
@@ -51,8 +52,8 @@
         },
         {
             "name": "Cube",
-            "from": [ 0, 0, 1 ], 
-            "to": [ 1, 16, 16 ], 
+            "from": [ 0, 0, 1 ],
+            "to": [ 1, 16, 16 ],
             "faces": {
                 "east": { "texture": "#oak_planks", "uv": [ 0, 0, 15, 16 ] },
                 "south": { "texture": "#oak_planks", "uv": [ 0, 0, 1, 16 ] },
@@ -63,8 +64,8 @@
         },
         {
             "name": "Cube",
-            "from": [ 15, 0, 1 ], 
-            "to": [ 16, 16, 16 ], 
+            "from": [ 15, 0, 1 ],
+            "to": [ 16, 16, 16 ],
             "faces": {
                 "east": { "texture": "#oak_planks", "uv": [ 0, 0, 15, 16 ] },
                 "south": { "texture": "#oak_planks", "uv": [ 0, 0, 1, 16 ] },
@@ -75,8 +76,8 @@
         },
         {
             "name": "Cube",
-            "from": [ 1, 0, 1 ], 
-            "to": [ 15, 1, 16 ], 
+            "from": [ 1, 0, 1 ],
+            "to": [ 15, 1, 16 ],
             "faces": {
                 "south": { "texture": "#oak_planks", "uv": [ 0, 0, 14, 1 ] },
                 "up": { "texture": "#oak_planks", "uv": [ 0, 0, 14, 15 ] },
@@ -85,8 +86,8 @@
         },
         {
             "name": "Cube",
-            "from": [ 1, 15, 1 ], 
-            "to": [ 15, 16, 16 ], 
+            "from": [ 1, 15, 1 ],
+            "to": [ 15, 16, 16 ],
             "faces": {
                 "south": { "texture": "#oak_planks", "uv": [ 0, 0, 14, 1 ] },
                 "up": { "texture": "#oak_planks", "uv": [ 0, 0, 14, 15 ] },

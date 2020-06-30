@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "binetek:block/techshelf" }
+    "facing=north": { "model": "binetek:block/techshelf" },
+    "facing=south": { "model": "binetek:block/techshelf", "y": "180" },
+    "facing=east": { "model": "binetek:block/techshelf", "y": "90" },
+    "facing=west": { "model": "binetek:block/techshelf", "y": "270" }
   }
 }
