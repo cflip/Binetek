@@ -27,7 +27,7 @@ public class ResearchTableBlock extends Block {
 		if (!world.isRemote) {
 			player.openContainer(state.getContainer(world, pos));
 		}
-		return ActionResultType.PASS;
+		return ActionResultType.SUCCESS;
 	}
 
 	@ParametersAreNonnullByDefault
