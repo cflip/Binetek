@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient" : {
+    "item": "binetek:copper_ore"
+  },
+  "result": {
+    "item": "binetek:copper_ingot"
+  }
+}
