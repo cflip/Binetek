@@ -10,5 +10,11 @@
 
 	"itemGroup.binetek": "Binetek",
 
-	"container.research_table": "Researched Crafting"
+	"container.research_table": "Researched Crafting",
+
+	"item.binetek.techbook_chemical": "Chemical Research Book",
+	"item.binetek.techbook_construction": "Construction Research Book",
+	"item.binetek.techbook_order": "Command Research Book",
+	"item.binetek.techbook_weaponry": "Weaponry Research Book"
+
 }
