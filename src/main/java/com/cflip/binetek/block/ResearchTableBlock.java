@@ -3,6 +3,7 @@ package com.cflip.binetek.block;
 import com.cflip.binetek.container.ResearchTableContainer;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.container.INamedContainerProvider;
@@ -18,7 +19,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 public class ResearchTableBlock extends Block {
 	public ResearchTableBlock() {
-		super(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.6f).harvestTool(ToolType.AXE));
+		super(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.6f).harvestTool(ToolType.AXE).sound(SoundType.WOOD));
 	}
 
 	@ParametersAreNonnullByDefault
