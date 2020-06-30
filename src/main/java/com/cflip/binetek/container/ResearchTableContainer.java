@@ -1,20 +1,33 @@
 package com.cflip.binetek.container;
 
+import com.cflip.binetek.item.TechBookItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.CraftResultInventory;
 import net.minecraft.inventory.CraftingInventory;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.CraftingResultSlot;
 import net.minecraft.inventory.container.Slot;
+import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 
 public class ResearchTableContainer extends Container {
 	public static final ITextComponent TITLE = new TranslationTextComponent("container.research_table");
+
+	private static class TechBookInputSlot extends Slot {
+		public TechBookInputSlot(IInventory inventoryIn, int index, int xPosition, int yPosition) {
+			super(inventoryIn, index, xPosition, yPosition);
+		}
+
+		@Override
+		public boolean isItemValid(ItemStack stack) {
+			return stack.getItem() instanceof TechBookItem;
+		}
+	}
 
 	private final CraftingInventory craftingGrid = new CraftingInventory(this, 3, 3);
 	private final CraftResultInventory craftingResult = new CraftResultInventory();
@@ -23,7 +36,7 @@ public class ResearchTableContainer extends Container {
 	public ResearchTableContainer(int windowId, PlayerInventory inventory, PacketBuffer packet) {
 		super(ContainerList.RESEARCH_TABLE, windowId);
 		addSlot(new CraftingResultSlot(inventory.player, craftingGrid, craftingResult, 0, 145, 35));
-		addSlot(new Slot(bookInput, 0, 15, 35));
+		addSlot(new TechBookInputSlot(bookInput, 0, 15, 35));
 
 		// Crafting grid
 		for (int gy = 0; gy < 3; ++gy) {

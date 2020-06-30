@@ -7,10 +7,7 @@ import com.cflip.binetek.client.gui.ResearchTableScreen;
 import com.cflip.binetek.container.ContainerList;
 import com.cflip.binetek.container.ResearchTableContainer;
 import com.cflip.binetek.gen.BinetekOreGen;
-import com.cflip.binetek.item.BinetekItemGroup;
-import com.cflip.binetek.item.CoalCokeItem;
-import com.cflip.binetek.item.FertilizerPouchItem;
-import com.cflip.binetek.item.ItemList;
+import com.cflip.binetek.item.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -65,10 +62,10 @@ public class Binetek {
 				ItemList.coalCoke = new CoalCokeItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "coal_coke"),
 				ItemList.sulfur = new Item(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "sulfur"),
 				ItemList.copperIngot = new Item(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "copper_ingot"),
-				ItemList.techbookChem = new Item(new Item.Properties().group(BinetekItemGroup.instance).maxStackSize(1)).setRegistryName(Binetek.MODID, "techbook_chemical"),
-				ItemList.techbookConst = new Item(new Item.Properties().group(BinetekItemGroup.instance).maxStackSize(1)).setRegistryName(Binetek.MODID, "techbook_construction"),
-				ItemList.techbookOrd = new Item(new Item.Properties().group(BinetekItemGroup.instance).maxStackSize(1)).setRegistryName(Binetek.MODID, "techbook_order"),
-				ItemList.techbookWeap = new Item(new Item.Properties().group(BinetekItemGroup.instance).maxStackSize(1)).setRegistryName(Binetek.MODID, "techbook_weaponry"),
+				ItemList.techbookChemical = new TechBookItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "techbook_chemical"),
+				ItemList.techbookConstruction = new TechBookItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "techbook_construction"),
+				ItemList.techbookOrder = new TechBookItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "techbook_order"),
+				ItemList.techbookWeaponry = new TechBookItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "techbook_weaponry"),
 
 				// BLOCK ITEMS
 				ItemList.researchTable = new BlockItem(BlockList.researchTable, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(BlockList.researchTable.getRegistryName()),
