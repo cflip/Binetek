@@ -8,5 +8,7 @@
 	"item.binetek.coal_coke": "Coal Coke",
 	"item.binetek.sulfur": "Sulfur",
 
-	"itemGroup.binetek": "Binetek"
+	"itemGroup.binetek": "Binetek",
+
+	"container.research_table": "Researched Crafting"
 }

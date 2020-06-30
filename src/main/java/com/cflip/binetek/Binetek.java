@@ -1,6 +1,7 @@
 package com.cflip.binetek;
 
 import com.cflip.binetek.block.BlockList;
+import com.cflip.binetek.block.ResearchTableBlock;
 import com.cflip.binetek.item.BinetekItemGroup;
 import com.cflip.binetek.item.CoalCokeItem;
 import com.cflip.binetek.item.FertilizerPouchItem;
@@ -65,7 +66,7 @@ public class Binetek {
 		@SubscribeEvent
 		public static void registerBlocks(final RegistryEvent.Register<Block> event) {
 			event.getRegistry().registerAll(
-				BlockList.researchTable = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.6f).harvestTool(ToolType.AXE).sound(SoundType.WOOD)).setRegistryName(Binetek.MODID, "research_table"),
+				BlockList.researchTable = new ResearchTableBlock().setRegistryName(Binetek.MODID, "research_table"),
 				BlockList.limeStone = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.6f).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)).setRegistryName(Binetek.MODID, "limestone"),
 				BlockList.sulfurOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.STONE)).setRegistryName(Binetek.MODID, "sulfur_ore")
 			);
