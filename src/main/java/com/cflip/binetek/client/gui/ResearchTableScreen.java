@@ -23,6 +23,13 @@ public class ResearchTableScreen extends ContainerScreen<ResearchTableContainer>
 	}
 
 	@Override
+	public void render(int mouseX, int mouseY, float p_render_3_) {
+		renderBackground();
+		super.render(mouseX, mouseY, p_render_3_);
+		renderHoveredToolTip(mouseX, mouseY);
+	}
+
+	@Override
 	protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
 		font.drawString(title.getFormattedText(), 8, 6, 0x404040);
 		font.drawString(playerInventory.getDisplayName().getFormattedText(), 8, (float)(ySize - 96 + 2), 0x404040);
@@ -30,7 +37,6 @@ public class ResearchTableScreen extends ContainerScreen<ResearchTableContainer>
 
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
-		renderBackground();
 		RenderSystem.color4f(1, 1, 1, 1);
 		minecraft.getTextureManager().bindTexture(BACKGROUND_IMAGE);
 		blit(guiLeft, (height - ySize) / 2, 0, 0, xSize, ySize);
