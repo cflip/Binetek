@@ -9,7 +9,6 @@ import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.SimpleNamedContainerProvider;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Hand;
-import net.minecraft.util.IWorldPosCallable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
@@ -33,6 +32,6 @@ public class ResearchTableBlock extends Block {
 	@ParametersAreNonnullByDefault
 	@Override
 	public INamedContainerProvider getContainer(BlockState state, World world, BlockPos pos) {
-		return new SimpleNamedContainerProvider((windowId, inventory, player) -> new ResearchTableContainer(windowId, inventory, IWorldPosCallable.of(world, pos)), ResearchTableContainer.TITLE);
+		return new SimpleNamedContainerProvider((windowId, inventory, player) -> new ResearchTableContainer(windowId, inventory, null), ResearchTableContainer.TITLE);
 	}
 }
