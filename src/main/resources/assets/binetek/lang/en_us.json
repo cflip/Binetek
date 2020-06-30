@@ -14,8 +14,9 @@
 	"item.binetek.techbook_construction": "Construction Research Book",
 	"item.binetek.techbook_order": "Command Research Book",
 	"item.binetek.techbook_weaponry": "Weaponry Research Book",
-
+	"item.binetek.techshelf":"Technology Bookshelf",
 	"itemGroup.binetek": "Binetek",
 
 	"container.research_table": "Researched Crafting"
+
 }

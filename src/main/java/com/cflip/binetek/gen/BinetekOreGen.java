@@ -15,7 +15,7 @@ public class BinetekOreGen {
 	public static void generate() {
 		for (Biome biome : ForgeRegistries.BIOMES) {
 			addOre(biome, BlockList.sulfurOre, 8, 7, 0, 16);
-			addOre(biome, BlockList.copperOre, 21, 12, 0, 64);
+			addOre(biome, BlockList.copperOre, 16, 12, 0, 64);
 		}
 	}
 
