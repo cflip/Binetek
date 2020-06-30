@@ -58,7 +58,16 @@ public class ResearchTableContainer extends Container {
 		}
 	}
 
-	// TODO: Override transferStackInSlot to fix shift-click crash
+	@Override
+	public ItemStack transferStackInSlot(PlayerEntity player, int index) {
+		ItemStack stack = inventorySlots.get(index).getStack();
+		if (stack.getItem() instanceof TechBookItem && bookInput.isEmpty()) {
+			bookInput.setInventorySlotContents(0, stack.copy());
+			stack.setCount(0);
+		}
+
+		return ItemStack.EMPTY;
+	}
 
 	@Override
 	public void onContainerClosed(PlayerEntity player) {
