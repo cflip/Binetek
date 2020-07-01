@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"M",
+		"S"
+	],
+	"key": {
+		"M": { "tag": "planks" },
+		"S": { "item": "minecraft:stick" }
+	},
+	"result": { "item": "binetek:wooden_knife" }
+}

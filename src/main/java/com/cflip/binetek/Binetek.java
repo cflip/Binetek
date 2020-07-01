@@ -72,6 +72,12 @@ public class Binetek {
 				ItemList.copperShovel = new ShovelItem(CopperItemTier.instance, 1, -3, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "copper_shovel"),
 				ItemList.copperHoe = new HoeItem(CopperItemTier.instance, -0.6f, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "copper_hoe"),
 				ItemList.copperSword = new SwordItem(CopperItemTier.instance, 2, -2.8f, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "copper_sword"),
+				ItemList.woodenKnife = new KnifeItem(ItemTier.WOOD, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "wooden_knife"),
+				ItemList.stoneKnife = new KnifeItem(ItemTier.STONE, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "stone_knife"),
+				ItemList.ironKnife = new KnifeItem(ItemTier.IRON, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "iron_knife"),
+				ItemList.goldenKnife = new KnifeItem(ItemTier.GOLD, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "golden_knife"),
+				ItemList.diamondKnife = new KnifeItem(ItemTier.DIAMOND, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "diamond_knife"),
+				ItemList.copperKnife = new KnifeItem(CopperItemTier.instance, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "copper_knife"),
 
 				// BLOCK ITEMS
 				ItemList.researchTable = new BlockItem(BlockList.researchTable, new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(BlockList.researchTable.getRegistryName()),
