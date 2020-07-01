@@ -28,7 +28,7 @@ public class TechShelfBlock extends Block {
 	@Nullable
 	@Override
 	public BlockState getStateForPlacement(BlockItemUseContext context) {
-		return getDefaultState().with(DIRECTION, context.getPlacementHorizontalFacing().getOpposite());
+		return getDefaultState().with(DIRECTION, context.getPlacementHorizontalFacing());
 	}
 
 	@Override
