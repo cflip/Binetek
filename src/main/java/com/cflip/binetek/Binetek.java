@@ -59,6 +59,7 @@ public class Binetek {
 					ItemList.fertilizerPouch = new FertilizerPouchItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "fertilizer_pouch"),
 					ItemList.coalCoke = new CoalCokeItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "coal_coke"),
 					ItemList.sulfur = new Item(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "sulfur"),
+					ItemList.copperDust = new Item(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "copper_dust"),
 					ItemList.lime = new Item(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "lime"),
 					ItemList.copperIngot = new Item(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "copper_ingot"),
 					ItemList.techbookChemical = new TechBookItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "techbook_chemical"),
