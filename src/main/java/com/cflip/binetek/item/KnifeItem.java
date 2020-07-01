@@ -1,4 +1,4 @@
-package com.cflip.binetek;
+package com.cflip.binetek.item;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
