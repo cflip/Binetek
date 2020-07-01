@@ -63,6 +63,7 @@ public class Binetek {
 				ItemList.copperDust = new Item(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "copper_dust"),
 				ItemList.lime = new Item(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "lime"),
 				ItemList.copperIngot = new Item(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "copper_ingot"),
+				ItemList.steelIngot = new Item(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "steel_ingot"),
 				ItemList.techbookChemical = new TechBookItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "techbook_chemical"),
 				ItemList.techbookConstruction = new TechBookItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "techbook_construction"),
 				ItemList.techbookOrder = new TechBookItem(new Item.Properties().group(BinetekItemGroup.instance)).setRegistryName(Binetek.MODID, "techbook_order"),
