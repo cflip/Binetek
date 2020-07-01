@@ -1,7 +1,7 @@
 {
     "textures": {
-        "particle": "blocks/oak_planks",
-        "oak_planks": "blocks/oak_planks"
+        "particle": "block/oak_planks",
+        "oak_planks": "block/oak_planks"
     },
 	"display": {
         "gui": {
