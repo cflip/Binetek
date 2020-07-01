@@ -29,7 +29,7 @@ public class CopperItemTier implements IItemTier {
 
 	@Override
 	public int getEnchantability() {
-		return 6;
+		return 25;
 	}
 
 	@Override
