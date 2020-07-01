@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "binetek:sulfur"
+    },
+    {
+      "item": "binetek:lime"
+    },
+    {
+      "item": "binetek:copper_dust"
+    }
+  ],
+  "result": {
+    "item": "binetek:fertilizer_dust", "count": 6
+  }
+}

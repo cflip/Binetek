@@ -3,6 +3,7 @@ package com.cflip.binetek.container;
 import com.cflip.binetek.item.TechBookItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.CraftResultInventory;
 import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.inventory.IInventory;
@@ -11,9 +12,15 @@ import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.CraftingResultSlot;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.ICraftingRecipe;
+import net.minecraft.item.crafting.IRecipeType;
 import net.minecraft.network.PacketBuffer;
+import net.minecraft.network.play.server.SSetSlotPacket;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.world.World;
+
+import java.util.Optional;
 
 public class ResearchTableContainer extends Container {
 	public static final ITextComponent TITLE = new TranslationTextComponent("container.research_table");
@@ -33,9 +40,15 @@ public class ResearchTableContainer extends Container {
 	private final CraftResultInventory craftingResult = new CraftResultInventory();
 	private final Inventory bookInput = new Inventory(1);
 
+	private World world;
+	private PlayerEntity player;
+
 	public ResearchTableContainer(int windowId, PlayerInventory inventory, PacketBuffer packet) {
 		super(ContainerList.RESEARCH_TABLE, windowId);
-		addSlot(new CraftingResultSlot(inventory.player, craftingGrid, craftingResult, 0, 145, 35));
+		player = inventory.player;
+		this.world = player.world;
+
+		addSlot(new CraftingResultSlot(player, craftingGrid, craftingResult, 0, 145, 35));
 		addSlot(new TechBookInputSlot(bookInput, 0, 15, 35));
 
 		// Crafting grid
@@ -59,6 +72,26 @@ public class ResearchTableContainer extends Container {
 	}
 
 	@Override
+	public void onCraftMatrixChanged(IInventory inventory) {
+		if (!world.isRemote) {
+			ServerPlayerEntity sPlayer = (ServerPlayerEntity) player;
+			ItemStack stack = ItemStack.EMPTY;
+			Optional<ICraftingRecipe> optionalRecipe = world.getServer().getRecipeManager().getRecipe(IRecipeType.CRAFTING, craftingGrid, world);
+
+			if (optionalRecipe.isPresent()) {
+				ICraftingRecipe recipe = optionalRecipe.get();
+
+				if (craftingResult.canUseRecipe(world, sPlayer, recipe)) {
+					stack = recipe.getCraftingResult(craftingGrid);
+				}
+			}
+
+			craftingResult.setInventorySlotContents(0, stack);
+			sPlayer.connection.sendPacket(new SSetSlotPacket(windowId, 0, stack));
+		}
+	}
+
+	@Override
 	public ItemStack transferStackInSlot(PlayerEntity player, int index) {
 		ItemStack stack = inventorySlots.get(index).getStack();
 		if (stack.getItem() instanceof TechBookItem && bookInput.isEmpty()) {
@@ -76,7 +109,7 @@ public class ResearchTableContainer extends Container {
 	}
 
 	@Override
-	public boolean canInteractWith(PlayerEntity playerIn) {
+	public boolean canInteractWith(PlayerEntity player) {
 		return true;
 	}
 }
