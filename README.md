@@ -1,37 +1,4 @@
+# Binetek
 A general purpose tech and gadgets mod.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-I KNOW THE TRUTH TERRY DAVIS DIED FOR
+Currently archived, but development may continue at some point in the future
