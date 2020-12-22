@@ -1,4 +1,4 @@
-package net.cflip.binetek;
+package net.cflip.binetek.materials;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;

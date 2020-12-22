@@ -1,5 +1,6 @@
 package net.cflip.binetek;
 
+import net.cflip.binetek.registry.ModBlocks;
 import net.cflip.binetek.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -26,5 +27,6 @@ public class BinetekMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerItems();
+		ModBlocks.registerBlocks();
 	}
 }
