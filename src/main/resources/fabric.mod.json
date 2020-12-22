@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "binetek",
+  "version": "${version}",
+
+  "name": "Binetek",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "cflip",
+    "jusipat"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/cflip/Binetek/tree/fabric"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/binetek/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.cflip.binetek.BinetekMod"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  }
+}
